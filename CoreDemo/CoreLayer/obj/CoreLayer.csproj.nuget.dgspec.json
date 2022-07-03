@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\CoreDemo\\CoreLayer\\CoreLayer.csproj": {}
+    "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\Blog\\CoreDemo\\CoreLayer\\CoreLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\CoreDemo\\CoreLayer\\CoreLayer.csproj": {
+    "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\Blog\\CoreDemo\\CoreLayer\\CoreLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\CoreDemo\\CoreLayer\\CoreLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\Blog\\CoreDemo\\CoreLayer\\CoreLayer.csproj",
         "projectName": "CoreLayer",
-        "projectPath": "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\CoreDemo\\CoreLayer\\CoreLayer.csproj",
+        "projectPath": "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\Blog\\CoreDemo\\CoreLayer\\CoreLayer.csproj",
         "packagesPath": "C:\\Users\\Okan Karakoç\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\CoreDemo\\CoreLayer\\obj\\",
+        "outputPath": "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\Blog\\CoreDemo\\CoreLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

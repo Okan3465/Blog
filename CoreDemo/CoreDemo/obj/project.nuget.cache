@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HvvnJgYgE7Q/O7Xcs8hwT6atvRbh8PAu3CGu+cGm8KGESBSewis9DSdAtD1W3JLfAVU39vMs/4tLxjkYKI7EXw==",
+  "dgSpecHash": "sOIGmpPhe5ORUOHTLAg0CwbhbD8ySFv85BDrluMMgAdy5VCeKsBkVgZvEry2V4B+9e94twrsg23E+h7eL1cutg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\CoreDemo\\CoreDemo\\CoreDemo.csproj",
+  "projectFilePath": "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\Blog\\CoreDemo\\CoreDemo\\CoreDemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Okan Karakoç\\.nuget\\packages\\fluentvalidation\\11.0.2\\fluentvalidation.11.0.2.nupkg.sha512",
     "C:\\Users\\Okan Karakoç\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.0.2\\fluentvalidation.aspnetcore.11.0.2.nupkg.sha512",

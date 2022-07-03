@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DAdfyK7e69dGUVhcOh49matPaAYfdt9yGydY1+VEe0/mBC/txsOMKZj7YOvHEmzO9TeI4m9OXdl1XNGYMZ84ZA==",
+  "dgSpecHash": "GHjdG7PoX6CXZRH5m+2n2vsfQRezJr0SMqgLdjBEEulgzOUuK+J2YECxB9VBIK90+yiD1CUepYRS+xt7u9DsHg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\CoreDemo\\BusinessLayer\\BusinessLayer.csproj",
+  "projectFilePath": "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\Blog\\CoreDemo\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Okan Karakoç\\.nuget\\packages\\fluentvalidation\\11.0.2\\fluentvalidation.11.0.2.nupkg.sha512",
     "C:\\Users\\Okan Karakoç\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.0.2\\fluentvalidation.aspnetcore.11.0.2.nupkg.sha512",

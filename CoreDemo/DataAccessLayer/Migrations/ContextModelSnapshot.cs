@@ -89,6 +89,27 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("Blogs");
                 });
 
+            modelBuilder.Entity("EntityLayer.Concrete.BlogRaiting", b =>
+                {
+                    b.Property<int>("BlogRaitingID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("BlogID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("BlogRaitingCount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("BlogTotalScore")
+                        .HasColumnType("int");
+
+                    b.HasKey("BlogRaitingID");
+
+                    b.ToTable("BlogRaitings");
+                });
+
             modelBuilder.Entity("EntityLayer.Concrete.Category", b =>
                 {
                     b.Property<int>("CategoryID")
@@ -118,6 +139,9 @@ namespace DataAccessLayer.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("BlogID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("BlogScore")
                         .HasColumnType("int");
 
                     b.Property<bool>("ComentStatus")
