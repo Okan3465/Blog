@@ -31,7 +31,7 @@ namespace CoreDemo.Controllers
             {
                 p.WriterStatus = true;        //Status ve about kısmı index de olmadığı için controllerdan gönderdik boş geçmemesi için
                 p.WriterAbout = "Deneme Test";
-                wm.WriterAdd(p);
+                wm.TAdd(p);
                 return RedirectToAction("Index", "Blog"); //Blog controllerdaki index sayfasına gönder
 
             }
