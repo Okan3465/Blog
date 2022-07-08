@@ -387,3 +387,4 @@ C:\Users\Okan Karakoç\Documents\GitHub\Blog\CoreDemo\CoreDemo\obj\Debug\net5.0\
 C:\Users\Okan Karakoç\Documents\GitHub\Blog\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Shared\Components\WriterAboutOnDashboard\Default.cshtml.g.cs
 C:\Users\Okan Karakoç\Documents\GitHub\Blog\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Writer\WriterEditProfile.cshtml.g.cs
 C:\Users\Okan Karakoç\Documents\GitHub\Blog\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Writer\WriterAdd.cshtml.g.cs
+C:\Users\Okan Karakoç\Documents\GitHub\Blog\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Notification\AllNotifications.cshtml.g.cs
