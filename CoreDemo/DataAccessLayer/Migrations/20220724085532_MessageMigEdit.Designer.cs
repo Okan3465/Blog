@@ -4,14 +4,16 @@ using DataAccessLayer.Concrete;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20220724085532_MessageMigEdit")]
+    partial class MessageMigEdit
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -270,10 +272,13 @@ namespace DataAccessLayer.Migrations
                     b.Property<bool>("MessageStatus")
                         .HasColumnType("bit");
 
-                    b.Property<int?>("ReceiverID")
+                    b.Property<int?>("Receiver")
                         .HasColumnType("int");
 
-                    b.Property<int?>("SenderID")
+                    b.Property<int?>("ReceiverUserWriterID")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Sender")
                         .HasColumnType("int");
 
                     b.Property<string>("Subject")
@@ -281,11 +286,11 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("MessageID");
 
-                    b.HasIndex("ReceiverID");
+                    b.HasIndex("ReceiverUserWriterID");
 
-                    b.HasIndex("SenderID");
+                    b.HasIndex("Sender");
 
-                    b.ToTable("Message2s");
+                    b.ToTable("Message2");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.NewsLetter", b =>
@@ -430,11 +435,11 @@ namespace DataAccessLayer.Migrations
                 {
                     b.HasOne("EntityLayer.Concrete.Writer", "ReceiverUser")
                         .WithMany("WriterReceiver")
-                        .HasForeignKey("ReceiverID");
+                        .HasForeignKey("ReceiverUserWriterID");
 
                     b.HasOne("EntityLayer.Concrete.Writer", "SenderUser")
                         .WithMany("WriterSender")
-                        .HasForeignKey("SenderID");
+                        .HasForeignKey("Sender");
 
                     b.Navigation("ReceiverUser");
 

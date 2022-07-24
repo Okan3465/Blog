@@ -4,14 +4,16 @@ using DataAccessLayer.Concrete;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20220723170012_mig_TeamTable")]
+    partial class mig_TeamTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -270,22 +272,28 @@ namespace DataAccessLayer.Migrations
                     b.Property<bool>("MessageStatus")
                         .HasColumnType("bit");
 
-                    b.Property<int?>("ReceiverID")
+                    b.Property<int?>("Receiver")
                         .HasColumnType("int");
 
-                    b.Property<int?>("SenderID")
+                    b.Property<int?>("Sender")
                         .HasColumnType("int");
 
                     b.Property<string>("Subject")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("WriterID")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("WriterID1")
+                        .HasColumnType("int");
+
                     b.HasKey("MessageID");
 
-                    b.HasIndex("ReceiverID");
+                    b.HasIndex("WriterID");
 
-                    b.HasIndex("SenderID");
+                    b.HasIndex("WriterID1");
 
-                    b.ToTable("Message2s");
+                    b.ToTable("Message2");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.NewsLetter", b =>
@@ -428,17 +436,13 @@ namespace DataAccessLayer.Migrations
 
             modelBuilder.Entity("EntityLayer.Concrete.Message2", b =>
                 {
-                    b.HasOne("EntityLayer.Concrete.Writer", "ReceiverUser")
+                    b.HasOne("EntityLayer.Concrete.Writer", null)
                         .WithMany("WriterReceiver")
-                        .HasForeignKey("ReceiverID");
+                        .HasForeignKey("WriterID");
 
-                    b.HasOne("EntityLayer.Concrete.Writer", "SenderUser")
+                    b.HasOne("EntityLayer.Concrete.Writer", null)
                         .WithMany("WriterSender")
-                        .HasForeignKey("SenderID");
-
-                    b.Navigation("ReceiverUser");
-
-                    b.Navigation("SenderUser");
+                        .HasForeignKey("WriterID1");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Blog", b =>
