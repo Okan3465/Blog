@@ -28,7 +28,7 @@ namespace CoreDemo
         {
             services.AddControllersWithViews();
 
-           services.AddSession(); //oturum ekleme sayfasý.Login controllerda oluþturduðum session iþlemi için startup'da ConfigureService  ve add.session iþlemi yaptýk.
+            services.AddSession(); //oturum ekleme sayfasý.Login controllerda oluþturduðum session iþlemi için startup'da ConfigureService  ve add.session iþlemi yaptýk.
 
 
 
@@ -41,7 +41,7 @@ namespace CoreDemo
             });
 
             services.AddMvc();                     //bu satýr ve bir alt satýrdaki iþlemi click edildiðind egelmeyen sayfalarý getirmek                                        için yapýyoruz .Bu iþlemi uygulayýnca sadece Login/Index sayfasýna götürüyor bütün                                               deðerleri.
-            services.AddAuthentication(           
+            services.AddAuthentication(
                 CookieAuthenticationDefaults.AuthenticationScheme
                 )
                 .AddCookie(x =>
@@ -64,7 +64,7 @@ namespace CoreDemo
                 app.UseHsts();
             }
 
-            app.UseStatusCodePagesWithReExecute("/ErrorPage/Error1","?Code={0}"); //null döenbilir o yüzden soru iþareti býraktým.Buradaki ismin controllerdaki isimle ayný olmasý gerekir .Hata sayfasýný getirmek için kullandým
+            app.UseStatusCodePagesWithReExecute("/ErrorPage/Error1", "?Code={0}"); //null döenbilir o yüzden soru iþareti býraktým.Buradaki ismin controllerdaki isimle ayný olmasý gerekir .Hata sayfasýný getirmek için kullandým
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -81,14 +81,17 @@ namespace CoreDemo
 
                 endpoints.MapControllerRoute(    //ares eklendikten sonra eklenen iþlem 
                  name: "areas",
-                pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
-                
+                pattern: "{area:exists}/{controller=chart}/{action=Index}/{id?}"
+
                 );
 
+
                 endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+              name: "default",
+              pattern: "{controller=Home}/{action=Index}/{id?}"
+              );
             });
         }
     }
+
 }
