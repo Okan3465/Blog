@@ -23,9 +23,9 @@
 
     google.charts.load('current', { 'packages': ['corechart'] });
     google.charts.setOnLoadCallback(DrawonLoad);
-    
-    function DrawonLoad(){
-        $(function (){
+
+    function DrawonLoad() {
+        $(function () {
 
             $.ajax({
                 type: 'GET',
@@ -55,9 +55,15 @@
                 }
             });
 
-         })
+        })
     }
 
 </script>
 
+@section scripts
+{
+    <script>
+
+    </script>
+}
 
