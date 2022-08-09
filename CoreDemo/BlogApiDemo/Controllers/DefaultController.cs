@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace BlogApiDemo.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
+    [ApiController]    
     public class DefaultController : ControllerBase
     {
         [HttpGet]

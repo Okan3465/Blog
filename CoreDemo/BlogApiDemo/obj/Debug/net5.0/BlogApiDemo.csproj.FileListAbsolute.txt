@@ -58,3 +58,4 @@ C:\Users\Okan Karakoç\Documents\GitHub\Blog\CoreDemo\BlogApiDemo\obj\Debug\net5
 C:\Users\Okan Karakoç\Documents\GitHub\Blog\CoreDemo\BlogApiDemo\obj\Debug\net5.0\ref\BlogApiDemo.dll
 C:\Users\Okan Karakoç\Documents\GitHub\Blog\CoreDemo\BlogApiDemo\obj\Debug\net5.0\staticwebassets\BlogApiDemo.StaticWebAssets.xml
 C:\Users\Okan Karakoç\Documents\GitHub\Blog\CoreDemo\BlogApiDemo\bin\Debug\net5.0\ref\BlogApiDemo.dll
+C:\Users\Okan Karakoç\Documents\GitHub\Blog\CoreDemo\BlogApiDemo\obj\Debug\net5.0\BlogApiDemo.csproj.AssemblyReference.cache
