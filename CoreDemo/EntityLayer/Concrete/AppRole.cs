@@ -7,10 +7,7 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Concrete
 {
-  public  class AppUser:IdentityUser<int>//burada int primary key değeridir
+   public class AppRole:IdentityRole<int>
     {
-        public string NameSurname { get; set; }
-        public string ImageUrl { get; set; }
-
     }
 }

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Concrete
 {
-   public class Context : IdentityDbContext<AppUser> //<AppUser> tablosunu AspAppUSer'la ilişkilendirmek(bu tablolara müdahil olabilmek için) için bu işlem yapıldı.AppUSer veritabanına yansıtmak için dbset<> oluşturmak yerine bu şekilde yazıldı
+   public class Context : IdentityDbContext<AppUser,AppRole,int>//<AppUser> tablosunu AspAppUSer'la ilişkilendirmek(bu tablolara müdahil olabilmek için) için bu işlem yapıldı.AppUSer veritabanına yansıtmak için dbset<> oluşturmak yerine bu şekilde yazıldı
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
