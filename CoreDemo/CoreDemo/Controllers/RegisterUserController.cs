@@ -27,7 +27,7 @@ namespace CoreDemo.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(UserSignUpViewModel p)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid)   //modeldeki işlem koşulları sağlandıysa
             {
                 AppUser user = new AppUser()
                 {
@@ -37,13 +37,14 @@ namespace CoreDemo.Controllers
                 };
 
                 var result = await _userManager.CreateAsync(user, p.Password);
-                if (result.Succeeded)
+
+                if (result.Succeeded) 
                 {
                     return RedirectToAction("Index", "Login");
                 }
                 else
                 {
-                    foreach (var item in result.Errors)
+                    foreach (var item in result.Errors)  //Eğer reult hatalıysa 
                     {
                         ModelState.AddModelError("", item.Description);
                     }
